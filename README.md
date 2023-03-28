@@ -1,11 +1,12 @@
 # NorthWind Traders
 
 ![alt text](img/NorthWind.png)
+
 Fonte: RodReis, em Unsplash
 
 ---
 
-## 1 - Business Problems ( Problemas de Negócio )
+## 1 - Business Problems
 
 ### 1.1 - Business Problems
 
@@ -15,7 +16,7 @@ When the company was small, this format worked, but now with the accelerated gro
 
 
 
-### 1.3 - Sobre os dados
+### 1.3 - About the data
 
 ---
 |SpreadSheets | Meaning |
@@ -42,7 +43,7 @@ When the company was small, this format worked, but now with the accelerated gro
 
 
 
-## 2 - Solution Strategy ( Estratégia de Solução )
+## 2 - Solution Strategy
 
 **CRISP-DM** stands for Cross Industry Standard Process for Data Mining, which can be translated as Standard Process for Inter-Industry Data Mining. It is a data mining process model that describes commonly used approaches by data mining experts to tackle problems.
 
@@ -50,7 +51,7 @@ When the company was small, this format worked, but now with the accelerated gro
 
 As a basis for this project, we will use CRISP, and once the entire first cycle of CRISP is completed, we can make further iterations, create new features, generate new insights, and improve model performance, all to deliver more value to the company. It is also important to engage with stakeholders in the project throughout the process, to keep them informed and manage their expectations.
 
-All codes and visualizations of this project can be followed in this [Notebook](Notebook.ipynb).
+All codes, visualizations and analysis of this project can be followed in this [Notebook](notebook/v03.ipynb).
 
 ### 2.1 - Data Organizations Problem
 
@@ -64,9 +65,22 @@ This data frame was created to analyze all customer information.
 3. Order Order Dataframe: By unifying tables such as “order” and “order_details”, and generating new information from data combinations, an order data frame was created, facilitating data analysis.
 <img src="img/orders_df.png" width="600">
 
+
 ### 2.2 - Exploratory Data Analysis
 
-1. Descriptive statistics: allow us to identify patterns, relationships, and trends in the data, and to communicate these findings clearly and concisely.
+EDA: To better understand the data, I use techniques such as descriptive statistics, histograms, and other graphs to understand how the data behaves and what drove customers to churn.
+<img src="img/hist.png" width="600">
+
+### 2.2 - Cohort Analyses
+
+Retention tables show the group of customers who purchased for the first time during a given period. They also exhibit a progressive "fall" or decline in activity over time for that specific group (a cohort).
+<img src="img/cohort.png" width="600">
+
+### 2.3 - Churn Analysis
+
+In churn analysis, I check what assumptions a customer can make to churn and if I have any actionable insights.
+
+
 
 
 ## 6 - Technologies ( Tecnologias )

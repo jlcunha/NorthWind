@@ -78,12 +78,61 @@ Retention tables show the group of customers who purchased for the first time du
 
 ### 2.3 - Churn Analysis
 
-In churn analysis, I check what assumptions a customer can make to churn and if I have any actionable insights.
+In churn analysis, I check what assumptions a customer can make to churn and if I have any actionable insights. 
 
+Key actionable insights:
 
+1. The smaller the range of products purchased by the customer, the higher the churn rate. NorthWind has only **77 products**, this low assortment is one of the causes of churn.
+<img src="img/hip01.png" width="600">
 
+2. Orders with ship_via 3 have more churn, **is necessary to identify with deliveries what is happening**. 
+<img src="img/hip02.png" width="600">
 
-## 6 - Technologies ( Tecnologias )
+### 2.4 - RFM Analysis ( Recency Frequency Monetary Value )
+
+RFM is a tool used to identify a company's or organization's best customers using certain measures.
+<img src="img/rfm.png" width="600">
+
+### 2.5 - Clustering customers by purchasing behavior
+For grouping, the KMeans algorithm is used. The best number for clusters is 3.
+<img src="img/elbow.png" width="600">
+<img src="img/sihoute_score.png" width="600">
+
+### 2.6 - Recommendation System
+Based on the clusters, a recommendation system was created using a technique of spatial proximity of customer buying behavior data (by cluster), and the system shows the similarity assessment between customers, and returns a list of recommended products, according to the chosen customer.
+
+In these examples, the customer's 'ID' (BERGS, AROUT) is entered (by the seller), and the program returns the similarity score between the customers ( 0.33, 0.5 ), and the lists of recommended products.
+<img src="img/rec_sys.png" width="600">
+<img src="img/rec_sys01.png" width="600">
+
+### 2.7 - Elastic Price
+Another solution to increase the average ticket would be to increase the value of each product. For this, I calculated the price elasticity, that is, how much it is possible to increase the value of the product without this resulting in a drop in sales of this product.
+
+<img src="img/elastic_price.png" width="600">
+<img src="img/elastic_price01.png" width="600">
+
+### 2.8 - KPI's
+In the current management model, NorthWind has no way of monitoring its performance indicators and, therefore, its decisions are taken only based on intuition.
+To solve this, some KPIs were calculated:
+- Revenue
+- Numbers of Customers
+- Churn Rate
+- Average Ticket
+- CLTV
+- Average Delayed Days
+- Assortment
+
+## 3 - Next Steps
+1. A sales forecast using the Facebook Prophet framework.
+
+2. Seasonality analysis.
+
+3. Increase customer data collection.
+Fetch new data from customer regions.
+
+4. From the increase in the number of data, calculate the price elasticity.
+
+## 4 - Technologies
 
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
 [![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
@@ -93,14 +142,13 @@ In churn analysis, I check what assumptions a customer can make to churn and if 
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)](https://scipy.org/)
 [![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
-[![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
-[![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)](https://www.heroku.com/)
 
-## 7 - Author
+## 5 - Author
 
 Lucas da Cunha
-Data Scientist em formação
 
-[Portfolio de Projetos](https://jlcunha.github.io/portfolio_projetos/)
+Data Scientist / Data Analyst
+
+[Project Portfolio](https://jlcunha.github.io/portfolio_projetos/)
 
 [GitHub Profile](https://github.com/jlcunha/)

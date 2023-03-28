@@ -51,7 +51,7 @@ When the company was small, this format worked, but now with the accelerated gro
 
 As a basis for this project, we will use CRISP, and once the entire first cycle of CRISP is completed, we can make further iterations, create new features, generate new insights, and improve model performance, all to deliver more value to the company. It is also important to engage with stakeholders in the project throughout the process, to keep them informed and manage their expectations.
 
-All codes, visualizations and analysis of this project can be followed in this [Notebook](notebook/v03.ipynb).
+All codes, visualizations and analysis of this project can be followed in this [Notebook](notebooks/v03.ipynb).
 
 ### 2.1 - Data Organizations Problem
 
